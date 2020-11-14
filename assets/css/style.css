@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.inconsolata-regular {
+  font-family: "Inconsolata", monospace;
+  font-size: 18pt;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transform: scale(1.2);
+  margin-left: 10px;
+}
+.playfair-regular {
+  font-family: "Playfair Display", serif;
+  font-size: 10pt;
+  font-weight: 400;
+  color: #626262;
+}
+.playfair-bold {
+  font-family: "Playfair Display", serif;
+  font-size: 10pt;
+  font-weight: 700;
+}
+.playfair-black {
+  font-family: "Playfair Display", serif;
+  font-size: 10pt;
+  font-weight: 900;
+}
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10pt;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #000000;
+  font-weight: 600;
+  border-bottom: 2px solid #000000;
+}
+
+.header__container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.nav a:not(:last-child) {
+  margin-right: 90px;
+}
+.main-image {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background-image: url(../image/main-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  width: 90%;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.title1 {
+  margin-bottom: 25px;
+  color: #c8c3b9;
+}
+.title2 {
+  margin-bottom: 35px;
+  font-size: 20pt;
+}
+.text {
+  margin-bottom: 50px;
+  line-height: 2;
+}
+.grid {
+  display: grid;
+  grid-gap: 55px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  margin-bottom: 30px;
+}
+.grid__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.email {
+  background-color: #f0f0f0;
+}
+form {
+  align-items: center;
+  position: relative;
+  width: 400px;
+}
+.title3 {
+  margin-bottom: 35px;
+  font-size: 20pt;
+  color: #333333;
+  margin-top: 70px;
+}
+#input-email {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  padding-top: 12px;
+  padding-left: 5px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 70px;
+  width: 100%;
+}
+#input-email:focus {
+  border: 0;
+  border-bottom: 2px solid #000000;
+  outline: 0;
+}
+.submit {
+  position: absolute;
+  right: -27px;
+  top: 10px;
+  background: url(../image/icon/send.svg);
+  background-position: center;
+  border: 0;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 20px;
+}
+.submit:hover {
+  background: url(../image/icon/send-black.svg);
+  background-position: center;
+  border: 0;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 20px;
+  transform: scale(1.2);
+}
+#input-email::placeholder {
+  color: #626262;
+}
+.grid2 {
+  display: grid;
+  grid-gap: 55px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
+  margin-bottom: 90px;
+  margin-top: 70px;
+}
+.grid2 img {
+  width: 100%;
+
+  height: auto;
+  margin-bottom: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#button-more {
+  background: none;
+  border: 1px solid #626262;
+  color: #626262;
+  width: 162px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__title {
+  font-size: 10pt;
+  color: #000000;
+}
+.container__title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__title p:not(:last-child),
+footer a:not(:last-child) {
+  margin-right: 35px;
+}
+.container__title img {
+  width: auto;
+  height: 15px;
+}
